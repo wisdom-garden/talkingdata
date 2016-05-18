@@ -47,7 +47,7 @@
         return;
     }
     BOOL enabled = [arg0 boolValue];
-    [TalkingData openDebugLog:enabled];
+//    [TalkingData openDebugLog:enabled];
 }
 
 - (void)getDeviceId:(CDVInvokedUrlCommand*)command {
@@ -138,7 +138,7 @@
     }
     
     if (self.currPageName) {
-        [TalkingData trackPageEnd:self.pageName];
+        [TalkingData trackPageEnd:pageName];
     }
     self.currPageName = pageName;
     [TalkingData trackPageBegin:pageName];
